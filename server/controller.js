@@ -1,14 +1,17 @@
+const houses = require('./db.json');
+const hosueID = 4;
+
 module.exports = {
-    getHouses: (res, req) => {
+    getHouses: (req, res) => {
+        res.status(200).send(houses)
+    },
+    deleteHouse: (req, res) => {
 
     },
-    deleteHouse: (res, req) => {
+    createHouse: (req, res) => {
 
     },
-    createHouse: (res, req) => {
-
-    },
-    updateHouse: (res, req) => {
+    updateHouse: (req, res) => {
 
     },
 }
